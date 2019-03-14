@@ -16,6 +16,7 @@ end
 def printer(speakers)
 
   badges = batch_badge_creator(speakers)
+  binding.pry
   badges.each {|badge| puts badge}
 
   assignments = assign_rooms(speakers)
